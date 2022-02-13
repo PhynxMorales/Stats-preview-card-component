@@ -34,7 +34,7 @@ main {
   -ms-grid-rows: 446px;
       grid-template-rows: 446px;
   background-color: #1b1938;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .description__title {
@@ -107,12 +107,13 @@ main {
 }
 
 .card__image {
-  background-image: url(/images/image-header-desktop.jpg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0257/8494/2641/files/image-header-desktop.jpg?v=1644730733);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0 10px 10px 0;
   position: relative;
 }
 
@@ -123,6 +124,7 @@ main {
   height: 100%;
   mix-blend-mode: multiply;
   background-color: #aa5cdb;
+  border-radius: 0 10px 10px 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -177,6 +179,18 @@ main {
   }
   main {
     padding: 4rem 1.5rem;
+  }
+  .card__image {
+    border-radius: 10px 10px 0 0;
+  }
+  .card__image::after {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card__image {
+    background-image: url(https://cdn.shopify.com/s/files/1/0257/8494/2641/files/image-header-mobile.jpg?v=1644730733);
   }
 }
 /*# sourceMappingURL=styles.css.map */
